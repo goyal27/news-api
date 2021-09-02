@@ -32,8 +32,6 @@ t
 Dsrc/test/java/com/sapient/news/bdd/util/ExpectedResponseBuilder.java,b/8/b884890f72bc001c82d46412efaa5d098183303b
 h
 8src/main/java/com/sapient/news/client/NewsApiClient.java,e/e/eead8a3093e54317b4e7f3ccb5baa179fa41f7fe
-7
-pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
 p
 @src/test/java/com/sapient/news/bdd/steps/BaseCucumberRunner.java,c/c/ccfb643f4da61a9cf6cf3ab61e659efdc7cb8ef6
 m
