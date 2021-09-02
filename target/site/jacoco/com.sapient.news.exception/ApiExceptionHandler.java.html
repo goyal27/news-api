@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ApiExceptionHandler.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">news-api</a> &gt; <a href="index.source.html" class="el_package">com.sapient.news.exception</a> &gt; <span class="el_source">ApiExceptionHandler.java</span></div><h1>ApiExceptionHandler.java</h1><pre class="source lang-java linenums">package com.sapient.news.exception;
+
+import lombok.extern.slf4j.Slf4j;
+import org.eclipse.jetty.http.HttpStatus;
+import org.slf4j.MDC;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+
+import javax.servlet.http.HttpServletRequest;
+import java.time.LocalDateTime;
+
+import static com.sapient.news.exception.ErrorCode.*;
+import static com.sapient.news.util.Constant.*;
+import static org.springframework.http.HttpStatus.*;
+
+@ControllerAdvice
+<span class="fc" id="L19">@Slf4j</span>
+@Component
+<span class="fc" id="L21">public class ApiExceptionHandler {</span>
+  @ExceptionHandler(BadRequestException.class)
+  public ResponseEntity&lt;ErrorMessage&gt; exceptionHandler(
+      HttpServletRequest request, BadRequestException exception) {
+<span class="nc" id="L25">    log.warn(RECEIVED_A_BAD_REQUEST_MESSAGE, exception);</span>
+<span class="nc" id="L26">    return ResponseEntity.badRequest()</span>
+<span class="nc" id="L27">        .body(</span>
+<span class="nc" id="L28">            ErrorMessage.builder()</span>
+<span class="nc" id="L29">                .code(</span>
+<span class="nc" id="L30">                    String.format(</span>
+                        EXCEPTION_ERROR_MESSAGE_FORMAT,
+<span class="nc" id="L32">                        BAD_REQUEST.value(),</span>
+                        PROJECT_CODE,
+<span class="nc" id="L34">                        BAD_REQUEST_ERROR.getCode()))</span>
+<span class="nc" id="L35">                .timestamp(LocalDateTime.now())</span>
+<span class="nc" id="L36">                .message(exception.getMessage())</span>
+<span class="nc" id="L37">                .reference(MDC.get(TRACE_ID_HEADER))</span>
+<span class="nc" id="L38">                .build());</span>
+  }
+
+  @ExceptionHandler(ServiceException.class)
+  public ResponseEntity&lt;ErrorMessage&gt; exceptionHandler(
+      HttpServletRequest request, ServiceException exception) {
+<span class="nc" id="L44">    log.warn(INTERNAL_SERVER_ERROR_MESSAGE, exception);</span>
+<span class="nc" id="L45">    return ResponseEntity.status(INTERNAL_SERVER_ERROR)</span>
+<span class="nc" id="L46">        .body(</span>
+<span class="nc" id="L47">            ErrorMessage.builder()</span>
+<span class="nc" id="L48">                .code(</span>
+<span class="nc" id="L49">                    String.format(</span>
+                        EXCEPTION_ERROR_MESSAGE_FORMAT,
+<span class="nc" id="L51">                        INTERNAL_SERVER_ERROR.value(),</span>
+                        PROJECT_CODE,
+<span class="nc" id="L53">                        INTERNAL_SERVER_ERROR_CODE.getCode()))</span>
+<span class="nc" id="L54">                .timestamp(LocalDateTime.now())</span>
+<span class="nc" id="L55">                .message(exception.getMessage())</span>
+<span class="nc" id="L56">                .reference(MDC.get(TRACE_ID_HEADER))</span>
+<span class="nc" id="L57">                .build());</span>
+  }
+
+  @ExceptionHandler(RequestLimitReachedException.class)
+  public ResponseEntity&lt;ErrorMessage&gt; exceptionHandler(
+      HttpServletRequest request, RequestLimitReachedException exception) {
+<span class="nc" id="L63">    return ResponseEntity.status(HttpStatus.TOO_MANY_REQUESTS_429)</span>
+<span class="nc" id="L64">        .body(</span>
+<span class="nc" id="L65">            ErrorMessage.builder()</span>
+<span class="nc" id="L66">                .code(</span>
+<span class="nc" id="L67">                    String.format(</span>
+<span class="nc" id="L68">                        EXCEPTION_ERROR_MESSAGE_FORMAT, TOO_MANY_REQUESTS.value(),</span>
+<span class="nc" id="L69">                        PROJECT_CODE, ERROR_REQUEST_LIMIT_REACHED.getCode()))</span>
+<span class="nc" id="L70">                .timestamp(LocalDateTime.now())</span>
+<span class="nc" id="L71">                .message(exception.getMessage())</span>
+<span class="nc" id="L72">                .reference(MDC.get(TRACE_ID_HEADER))</span>
+<span class="nc" id="L73">                .build());</span>
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.3.201901230119</span></div></body></html>

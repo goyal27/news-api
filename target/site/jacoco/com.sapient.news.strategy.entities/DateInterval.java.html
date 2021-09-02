@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>DateInterval.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">news-api</a> &gt; <a href="index.source.html" class="el_package">com.sapient.news.strategy.entities</a> &gt; <span class="el_source">DateInterval.java</span></div><h1>DateInterval.java</h1><pre class="source lang-java linenums">package com.sapient.news.strategy.entities;
+
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NonNull;
+
+import java.time.LocalDateTime;
+
+<span class="pc bpc" id="L9" title="4 of 8 branches missed.">@Builder</span>
+@Getter
+public class DateInterval {
+<span class="fc" id="L12">  @NonNull private final LocalDateTime startDate;</span>
+<span class="fc" id="L13">  @NonNull private final LocalDateTime endDate;</span>
+
+<span class="pc bpc" id="L15" title="1 of 2 branches missed.">  public boolean overlaps(@NonNull LocalDateTime localDateTime) {</span>
+<span class="pc bpc" id="L16" title="1 of 4 branches missed.">    return (startDate.isEqual(localDateTime) || startDate.isBefore(localDateTime))</span>
+<span class="pc bpc" id="L17" title="2 of 4 branches missed.">        &amp;&amp; (endDate.isEqual(localDateTime) || endDate.isAfter(localDateTime));</span>
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.3.201901230119</span></div></body></html>

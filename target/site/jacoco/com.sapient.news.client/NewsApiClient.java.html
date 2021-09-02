@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>NewsApiClient.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">news-api</a> &gt; <a href="index.source.html" class="el_package">com.sapient.news.client</a> &gt; <span class="el_source">NewsApiClient.java</span></div><h1>NewsApiClient.java</h1><pre class="source lang-java linenums">package com.sapient.news.client;
+
+import com.sapient.news.client.model.common.NewsArticle;
+import com.sapient.news.client.model.news.api.NewsAPIResponse;
+import com.sapient.news.exception.ServiceException;
+import com.sapient.news.request.NewsRequest;
+import lombok.NonNull;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+import org.springframework.web.client.RestClientException;
+import org.springframework.web.client.RestTemplate;
+import org.springframework.web.util.UriComponentsBuilder;
+
+import java.util.Collections;
+import java.util.List;
+import java.util.Objects;
+import java.util.stream.Collectors;
+
+import static com.sapient.news.exception.ErrorCode.ERROR_NEWS_CLIENT;
+import static com.sapient.news.util.Constant.NEWS_CLIENT_EXCEPTION;
+
+@Component
+<span class="fc" id="L25">@Slf4j</span>
+<span class="fc" id="L26">public class NewsApiClient implements NewsClient {</span>
+  @Autowired private RestTemplate restTemplate;
+
+  @Value(&quot;${news.api.baseUrl}&quot;)
+  private String baseUrl;
+
+  @Value(&quot;${news.api.everythingApiPath}&quot;)
+  private String everythingAPiPath;
+
+  @Value(&quot;${news.api.apiKey}&quot;)
+  private String apiKey;
+
+  @Override
+<span class="pc bpc" id="L39" title="1 of 2 branches missed.">  public List&lt;NewsArticle&gt; getNews(@NonNull NewsRequest newsRequest) {</span>
+    try {
+<span class="fc" id="L41">      final String url = createUrl(newsRequest);</span>
+<span class="fc" id="L42">      NewsAPIResponse newsAPIResponse = restTemplate.getForObject(url, NewsAPIResponse.class);</span>
+<span class="pc bpc" id="L43" title="2 of 4 branches missed.">      if (Objects.isNull(newsAPIResponse) || newsAPIResponse.getArticles().isEmpty()) {</span>
+<span class="nc" id="L44">        log.info(&quot;Received empty response for get news for request {}&quot;, newsRequest);</span>
+<span class="nc" id="L45">        return Collections.emptyList();</span>
+      }
+<span class="fc" id="L47">      return newsAPIResponse.getArticles().stream()</span>
+<span class="fc" id="L48">          .map(</span>
+              article -&gt;
+<span class="fc" id="L50">                  NewsArticle.builder()</span>
+<span class="fc" id="L51">                      .author(article.getAuthor())</span>
+<span class="fc" id="L52">                      .content(article.getContent())</span>
+<span class="fc" id="L53">                      .description(article.getDescription())</span>
+<span class="fc" id="L54">                      .imageUrl(article.getUrlToImage())</span>
+<span class="fc" id="L55">                      .url(article.getUrl())</span>
+<span class="fc" id="L56">                      .source(article.getSource().getName())</span>
+<span class="fc" id="L57">                      .publishedAt(article.getPublishedAt())</span>
+<span class="fc" id="L58">                      .build())</span>
+<span class="fc" id="L59">          .collect(Collectors.toList());</span>
+<span class="nc" id="L60">    } catch (RestClientException restClientException) {</span>
+<span class="nc" id="L61">      throw wrapRestClientException(restClientException, newsRequest);</span>
+    }
+  }
+
+  private ServiceException wrapRestClientException(
+      final RestClientException restClientException, final NewsRequest newsRequest) {
+<span class="nc" id="L67">    log.error(&quot;ResourceAccessException exception : {1}&quot;, restClientException);</span>
+<span class="nc" id="L68">    return new ServiceException(ERROR_NEWS_CLIENT, NEWS_CLIENT_EXCEPTION, newsRequest);</span>
+  }
+
+  private String createUrl(final NewsRequest newsRequest) {
+<span class="fc" id="L72">    final String url = baseUrl.concat(everythingAPiPath).concat(&quot;?&quot;);</span>
+<span class="fc" id="L73">    return UriComponentsBuilder.fromHttpUrl(url)</span>
+<span class="fc" id="L74">        .replaceQueryParam(&quot;apiKey&quot;, apiKey)</span>
+<span class="fc" id="L75">        .replaceQueryParam(&quot;q&quot;, newsRequest.getKeyword())</span>
+<span class="fc" id="L76">        .toUriString();</span>
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.3.201901230119</span></div></body></html>

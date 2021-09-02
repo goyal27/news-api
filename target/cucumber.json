@@ -1,0 +1,80 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 311329448,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "The News API is up \u0026 running",
+            "match": {
+              "location": "NewsAPIStepDefs.the_news_api_is_up_running()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "Get News from News API",
+        "description": "",
+        "id": "news-feature;get-news-from-news-api",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2799419444,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Requested news for keyword \"bitcoin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"bitcoin\"",
+                  "offset": 27
+                }
+              ],
+              "location": "NewsAPIStepDefs.requestNewsWithKeyword(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 143924,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "http response code is 200 OK",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 22
+                }
+              ],
+              "location": "NewsAPIStepDefs.http_response_code_is_OK(Integer)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "News Feature",
+    "description": "",
+    "id": "news-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/bdd/features/news.feature",
+    "tags": []
+  }
+]

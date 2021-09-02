@@ -1,0 +1,51 @@
+server:
+  port: 8080
+  compression:
+    enabled: true
+log:
+  request_response:
+    enabled: true
+resilience4j:
+  retry:
+    retryAspectOrder: 3
+    configs:
+      default:
+        maxAttempts: 3
+        waitDuration: 100ms
+        retryExceptions:
+          - org.springframework.web.client.HttpServerErrorException
+    instances:
+      getNewsRetry:
+        baseConfig: default
+  circuitbreaker:
+    circuitBreakerAspectOrder: 2
+    configs:
+      default:
+        slidingWindowSize: 10
+        slidingWindowType: COUNT_BASED
+        minimumNumberOfCalls: 5
+        permittedNumberOfCallsInHalfOpenState: 3
+        automaticTransitionFromOpenToHalfOpenEnabled: true
+        waitDurationInOpenState: 1s
+    instances:
+      getNewsCircuit:
+        baseConfig: default
+        failureRateThreshold: 50
+        recordExceptions:
+          - org.springframework.web.client.HttpServerErrorException
+  ratelimiter:
+    rateLimiterAspectOrder: 1
+    configs:
+      default:
+        limitForPeriod: 10
+        limitRefreshPeriod: 1s
+        timeoutDuration: 0
+    instances:
+      getNewsRateLimit:
+        baseConfig: default
+
+news:
+  api:
+    baseUrl: https://newsapi.org/v2
+    everythingApiPath: /everything
+    apiKey:

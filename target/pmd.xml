@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="5.3.2" timestamp="2021-08-30T12:08:22.153">
+<file name="/Users/shubham/IdeaProjects/personal/lld/news-api/src/main/java/com/sapient/news/api/NewsApi.java">
+<violation beginline="1" endline="108" begincolumn="1" endcolumn="2" rule="TooManyStaticImports" ruleset="Import Statements" package="com.sapient.news.api" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/imports.html#TooManyStaticImports" priority="3">
+Too many static imports may lead to messy code
+</violation>
+<violation beginline="95" endline="95" begincolumn="34" endcolumn="61" rule="UnnecessaryFullyQualifiedName" ruleset="Import Statements" package="com.sapient.news.api" class="NewsApi" method="getNewsFallBack" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/imports.html#UnnecessaryFullyQualifiedName" priority="4">
+Unnecessary use of fully qualified name 'HttpStatus.TOO_MANY_REQUESTS' due to existing import 'org.springframework.http.HttpStatus'
+</violation>
+</file>
+<file name="/Users/shubham/IdeaProjects/personal/lld/news-api/src/main/java/com/sapient/news/client/model/common/NewsArticle.java">
+<violation beginline="11" endline="11" begincolumn="26" endcolumn="31" rule="UnusedPrivateField" ruleset="Unused Code" package="com.sapient.news.client.model.common" class="NewsArticle" variable="author" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'author'.
+</violation>
+<violation beginline="12" endline="12" begincolumn="26" endcolumn="30" rule="UnusedPrivateField" ruleset="Unused Code" package="com.sapient.news.client.model.common" class="NewsArticle" variable="title" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'title'.
+</violation>
+<violation beginline="13" endline="13" begincolumn="26" endcolumn="36" rule="UnusedPrivateField" ruleset="Unused Code" package="com.sapient.news.client.model.common" class="NewsArticle" variable="description" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'description'.
+</violation>
+<violation beginline="14" endline="14" begincolumn="26" endcolumn="31" rule="UnusedPrivateField" ruleset="Unused Code" package="com.sapient.news.client.model.common" class="NewsArticle" variable="source" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'source'.
+</violation>
+<violation beginline="15" endline="15" begincolumn="26" endcolumn="28" rule="UnusedPrivateField" ruleset="Unused Code" package="com.sapient.news.client.model.common" class="NewsArticle" variable="url" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'url'.
+</violation>
+<violation beginline="16" endline="16" begincolumn="26" endcolumn="33" rule="UnusedPrivateField" ruleset="Unused Code" package="com.sapient.news.client.model.common" class="NewsArticle" variable="imageUrl" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'imageUrl'.
+</violation>
+<violation beginline="17" endline="17" begincolumn="26" endcolumn="32" rule="UnusedPrivateField" ruleset="Unused Code" package="com.sapient.news.client.model.common" class="NewsArticle" variable="content" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'content'.
+</violation>
+<violation beginline="18" endline="18" begincolumn="33" endcolumn="43" rule="UnusedPrivateField" ruleset="Unused Code" package="com.sapient.news.client.model.common" class="NewsArticle" variable="publishedAt" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'publishedAt'.
+</violation>
+</file>
+<file name="/Users/shubham/IdeaProjects/personal/lld/news-api/src/main/java/com/sapient/news/client/model/news/api/Article.java">
+<violation beginline="15" endline="15" begincolumn="21" endcolumn="26" rule="UnusedPrivateField" ruleset="Unused Code" package="com.sapient.news.client.model.news.api" class="Article" variable="source" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'source'.
+</violation>
+<violation beginline="16" endline="16" begincolumn="21" endcolumn="26" rule="UnusedPrivateField" ruleset="Unused Code" package="com.sapient.news.client.model.news.api" class="Article" variable="author" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'author'.
+</violation>
+<violation beginline="17" endline="17" begincolumn="21" endcolumn="25" rule="UnusedPrivateField" ruleset="Unused Code" package="com.sapient.news.client.model.news.api" class="Article" variable="title" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'title'.
+</violation>
+<violation beginline="18" endline="18" begincolumn="21" endcolumn="31" rule="UnusedPrivateField" ruleset="Unused Code" package="com.sapient.news.client.model.news.api" class="Article" variable="description" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'description'.
+</violation>
+<violation beginline="19" endline="19" begincolumn="21" endcolumn="23" rule="UnusedPrivateField" ruleset="Unused Code" package="com.sapient.news.client.model.news.api" class="Article" variable="url" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'url'.
+</violation>
+<violation beginline="20" endline="20" begincolumn="21" endcolumn="30" rule="UnusedPrivateField" ruleset="Unused Code" package="com.sapient.news.client.model.news.api" class="Article" variable="urlToImage" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'urlToImage'.
+</violation>
+<violation beginline="21" endline="21" begincolumn="28" endcolumn="38" rule="UnusedPrivateField" ruleset="Unused Code" package="com.sapient.news.client.model.news.api" class="Article" variable="publishedAt" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'publishedAt'.
+</violation>
+<violation beginline="22" endline="22" begincolumn="21" endcolumn="27" rule="UnusedPrivateField" ruleset="Unused Code" package="com.sapient.news.client.model.news.api" class="Article" variable="content" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'content'.
+</violation>
+</file>
+<file name="/Users/shubham/IdeaProjects/personal/lld/news-api/src/main/java/com/sapient/news/client/model/news/api/NewsAPIResponse.java">
+<violation beginline="15" endline="15" begincolumn="21" endcolumn="26" rule="UnusedPrivateField" ruleset="Unused Code" package="com.sapient.news.client.model.news.api" class="NewsAPIResponse" variable="status" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'status'.
+</violation>
+<violation beginline="16" endline="16" begincolumn="21" endcolumn="27" rule="UnusedPrivateField" ruleset="Unused Code" package="com.sapient.news.client.model.news.api" class="NewsAPIResponse" variable="message" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'message'.
+</violation>
+<violation beginline="17" endline="17" begincolumn="18" endcolumn="29" rule="UnusedPrivateField" ruleset="Unused Code" package="com.sapient.news.client.model.news.api" class="NewsAPIResponse" variable="totalResults" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'totalResults'.
+</violation>
+<violation beginline="18" endline="18" begincolumn="28" endcolumn="35" rule="UnusedPrivateField" ruleset="Unused Code" package="com.sapient.news.client.model.news.api" class="NewsAPIResponse" variable="articles" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'articles'.
+</violation>
+</file>
+<file name="/Users/shubham/IdeaProjects/personal/lld/news-api/src/main/java/com/sapient/news/client/model/news/api/Source.java">
+<violation beginline="13" endline="13" begincolumn="21" endcolumn="22" rule="UnusedPrivateField" ruleset="Unused Code" package="com.sapient.news.client.model.news.api" class="Source" variable="id" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'id'.
+</violation>
+<violation beginline="14" endline="14" begincolumn="21" endcolumn="24" rule="UnusedPrivateField" ruleset="Unused Code" package="com.sapient.news.client.model.news.api" class="Source" variable="name" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'name'.
+</violation>
+</file>
+<file name="/Users/shubham/IdeaProjects/personal/lld/news-api/src/main/java/com/sapient/news/context/TraceId.java">
+<violation beginline="11" endline="11" begincolumn="24" endcolumn="28" rule="UnusedPrivateField" ruleset="Unused Code" package="com.sapient.news.context" class="TraceId" variable="value" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'value'.
+</violation>
+</file>
+<file name="/Users/shubham/IdeaProjects/personal/lld/news-api/src/main/java/com/sapient/news/exception/ApiExceptionHandler.java">
+<violation beginline="63" endline="63" begincolumn="34" endcolumn="65" rule="UnnecessaryFullyQualifiedName" ruleset="Import Statements" package="com.sapient.news.exception" class="ApiExceptionHandler" method="exceptionHandler" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/imports.html#UnnecessaryFullyQualifiedName" priority="4">
+Unnecessary use of fully qualified name 'HttpStatus.TOO_MANY_REQUESTS_429' due to existing import 'org.eclipse.jetty.http.HttpStatus'
+</violation>
+</file>
+<file name="/Users/shubham/IdeaProjects/personal/lld/news-api/src/main/java/com/sapient/news/exception/ErrorMessage.java">
+<violation beginline="12" endline="12" begincolumn="35" endcolumn="38" rule="UnusedPrivateField" ruleset="Unused Code" package="com.sapient.news.exception" class="ErrorMessage" variable="code" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'code'.
+</violation>
+<violation beginline="13" endline="13" begincolumn="42" endcolumn="50" rule="UnusedPrivateField" ruleset="Unused Code" package="com.sapient.news.exception" class="ErrorMessage" variable="timestamp" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'timestamp'.
+</violation>
+<violation beginline="14" endline="14" begincolumn="35" endcolumn="41" rule="UnusedPrivateField" ruleset="Unused Code" package="com.sapient.news.exception" class="ErrorMessage" variable="message" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'message'.
+</violation>
+<violation beginline="15" endline="15" begincolumn="35" endcolumn="43" rule="UnusedPrivateField" ruleset="Unused Code" package="com.sapient.news.exception" class="ErrorMessage" variable="reference" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'reference'.
+</violation>
+<violation beginline="16" endline="16" begincolumn="32" endcolumn="37" rule="UnusedPrivateField" ruleset="Unused Code" package="com.sapient.news.exception" class="ErrorMessage" variable="errors" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'errors'.
+</violation>
+</file>
+<file name="/Users/shubham/IdeaProjects/personal/lld/news-api/src/main/java/com/sapient/news/request/NewsRequest.java">
+<violation beginline="13" endline="13" begincolumn="33" endcolumn="39" rule="UnusedPrivateField" ruleset="Unused Code" package="com.sapient.news.request" class="NewsRequest" variable="keyword" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'keyword'.
+</violation>
+<violation beginline="15" endline="15" begincolumn="25" endcolumn="32" rule="UnusedPrivateField" ruleset="Unused Code" package="com.sapient.news.request" class="NewsRequest" variable="interval" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'interval'.
+</violation>
+</file>
+<file name="/Users/shubham/IdeaProjects/personal/lld/news-api/src/main/java/com/sapient/news/response/NewsArticle.java">
+<violation beginline="14" endline="14" begincolumn="26" endcolumn="31" rule="UnusedPrivateField" ruleset="Unused Code" package="com.sapient.news.response" class="NewsArticle" variable="author" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'author'.
+</violation>
+<violation beginline="15" endline="15" begincolumn="26" endcolumn="30" rule="UnusedPrivateField" ruleset="Unused Code" package="com.sapient.news.response" class="NewsArticle" variable="title" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'title'.
+</violation>
+<violation beginline="16" endline="16" begincolumn="26" endcolumn="36" rule="UnusedPrivateField" ruleset="Unused Code" package="com.sapient.news.response" class="NewsArticle" variable="description" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'description'.
+</violation>
+<violation beginline="17" endline="17" begincolumn="26" endcolumn="31" rule="UnusedPrivateField" ruleset="Unused Code" package="com.sapient.news.response" class="NewsArticle" variable="source" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'source'.
+</violation>
+<violation beginline="18" endline="18" begincolumn="26" endcolumn="28" rule="UnusedPrivateField" ruleset="Unused Code" package="com.sapient.news.response" class="NewsArticle" variable="url" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'url'.
+</violation>
+<violation beginline="19" endline="19" begincolumn="26" endcolumn="33" rule="UnusedPrivateField" ruleset="Unused Code" package="com.sapient.news.response" class="NewsArticle" variable="imageUrl" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'imageUrl'.
+</violation>
+<violation beginline="20" endline="20" begincolumn="26" endcolumn="32" rule="UnusedPrivateField" ruleset="Unused Code" package="com.sapient.news.response" class="NewsArticle" variable="content" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'content'.
+</violation>
+<violation beginline="21" endline="21" begincolumn="33" endcolumn="43" rule="UnusedPrivateField" ruleset="Unused Code" package="com.sapient.news.response" class="NewsArticle" variable="publishedAt" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'publishedAt'.
+</violation>
+</file>
+<file name="/Users/shubham/IdeaProjects/personal/lld/news-api/src/main/java/com/sapient/news/response/NewsArticleInterval.java">
+<violation beginline="15" endline="15" begincolumn="33" endcolumn="41" rule="UnusedPrivateField" ruleset="Unused Code" package="com.sapient.news.response" class="NewsArticleInterval" variable="startTime" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'startTime'.
+</violation>
+<violation beginline="16" endline="16" begincolumn="33" endcolumn="39" rule="UnusedPrivateField" ruleset="Unused Code" package="com.sapient.news.response" class="NewsArticleInterval" variable="endTime" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'endTime'.
+</violation>
+</file>
+<file name="/Users/shubham/IdeaProjects/personal/lld/news-api/src/main/java/com/sapient/news/response/NewsGroup.java">
+<violation beginline="15" endline="15" begincolumn="39" endcolumn="46" rule="UnusedPrivateField" ruleset="Unused Code" package="com.sapient.news.response" class="NewsGroup" variable="interval" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'interval'.
+</violation>
+<violation beginline="16" endline="16" begincolumn="37" endcolumn="44" rule="UnusedPrivateField" ruleset="Unused Code" package="com.sapient.news.response" class="NewsGroup" variable="articles" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'articles'.
+</violation>
+</file>
+<file name="/Users/shubham/IdeaProjects/personal/lld/news-api/src/main/java/com/sapient/news/response/NewsResponse.java">
+<violation beginline="15" endline="15" begincolumn="33" endcolumn="42" rule="UnusedPrivateField" ruleset="Unused Code" package="com.sapient.news.response" class="NewsResponse" variable="newsGroups" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'newsGroups'.
+</violation>
+</file>
+</pmd>

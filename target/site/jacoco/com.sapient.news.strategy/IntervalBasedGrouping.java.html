@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>IntervalBasedGrouping.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">news-api</a> &gt; <a href="index.source.html" class="el_package">com.sapient.news.strategy</a> &gt; <span class="el_source">IntervalBasedGrouping.java</span></div><h1>IntervalBasedGrouping.java</h1><pre class="source lang-java linenums">package com.sapient.news.strategy;
+
+import com.sapient.news.client.model.common.NewsArticle;
+import com.sapient.news.request.NewsRequest;
+import com.sapient.news.response.NewsArticleInterval;
+import com.sapient.news.response.NewsGroup;
+import com.sapient.news.strategy.entities.DateInterval;
+import lombok.NonNull;
+import org.springframework.stereotype.Component;
+
+import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.stream.Collectors;
+
+@Component
+<span class="fc" id="L18">public class IntervalBasedGrouping implements NewsResponseGroupingStrategy {</span>
+  @Override
+  public List&lt;NewsGroup&gt; groupNews(
+<span class="pc bpc" id="L21" title="2 of 4 branches missed.">      @NonNull final NewsRequest newsRequest, @NonNull final List&lt;NewsArticle&gt; newsClientResponse) {</span>
+<span class="fc" id="L22">    newsClientResponse.sort(</span>
+<span class="fc" id="L23">        Comparator.comparing(NewsArticle::getPublishedAt, Comparator.reverseOrder()));</span>
+<span class="fc" id="L24">    List&lt;DateInterval&gt; intervals = getIntervals(newsRequest, newsClientResponse);</span>
+<span class="fc" id="L25">    int currNewsIndex = 0;</span>
+<span class="fc" id="L26">    List&lt;NewsGroup&gt; newsGroups = new ArrayList&lt;&gt;();</span>
+<span class="fc bfc" id="L27" title="All 2 branches covered.">    for (DateInterval interval : intervals) {</span>
+<span class="fc" id="L28">      List&lt;NewsArticle&gt; overlappingNewsArticles =</span>
+<span class="fc" id="L29">          getOverlappingNewsArticles(interval, newsClientResponse, currNewsIndex);</span>
+<span class="fc" id="L30">      currNewsIndex += overlappingNewsArticles.size();</span>
+<span class="fc bfc" id="L31" title="All 2 branches covered.">      if (!overlappingNewsArticles.isEmpty()) {</span>
+<span class="fc" id="L32">        newsGroups.add(</span>
+<span class="fc" id="L33">            NewsGroup.builder()</span>
+<span class="fc" id="L34">                .interval(</span>
+<span class="fc" id="L35">                    NewsArticleInterval.builder()</span>
+<span class="fc" id="L36">                        .startTime(interval.getStartDate())</span>
+<span class="fc" id="L37">                        .endTime(interval.getEndDate())</span>
+<span class="fc" id="L38">                        .build())</span>
+<span class="fc" id="L39">                .articles(groupArticles(overlappingNewsArticles))</span>
+<span class="fc" id="L40">                .build());</span>
+      }
+<span class="fc" id="L42">    }</span>
+
+<span class="fc" id="L44">    return newsGroups;</span>
+  }
+
+  private List&lt;com.sapient.news.response.NewsArticle&gt; groupArticles(
+<span class="pc bpc" id="L48" title="1 of 2 branches missed.">      @NonNull List&lt;NewsArticle&gt; newsArticles) {</span>
+<span class="fc" id="L49">    return newsArticles.stream()</span>
+<span class="fc" id="L50">        .map(</span>
+            article -&gt;
+<span class="fc" id="L52">                com.sapient.news.response.NewsArticle.builder()</span>
+<span class="fc" id="L53">                    .author(article.getAuthor())</span>
+<span class="fc" id="L54">                    .title(article.getTitle())</span>
+<span class="fc" id="L55">                    .description(article.getDescription())</span>
+<span class="fc" id="L56">                    .source(article.getDescription())</span>
+<span class="fc" id="L57">                    .content(article.getContent())</span>
+<span class="fc" id="L58">                    .url(article.getUrl())</span>
+<span class="fc" id="L59">                    .imageUrl(article.getImageUrl())</span>
+<span class="fc" id="L60">                    .publishedAt(article.getPublishedAt())</span>
+<span class="fc" id="L61">                    .build())</span>
+<span class="fc" id="L62">        .collect(Collectors.toList());</span>
+  }
+
+  private List&lt;NewsArticle&gt; getOverlappingNewsArticles(
+<span class="pc bpc" id="L66" title="1 of 2 branches missed.">      @NonNull DateInterval interval, List&lt;NewsArticle&gt; newsClientResponse, int currNewsIndex) {</span>
+<span class="fc" id="L67">    List&lt;NewsArticle&gt; overlappingNewsArticles = new ArrayList&lt;&gt;();</span>
+<span class="fc bfc" id="L68" title="All 2 branches covered.">    while (currNewsIndex &lt; newsClientResponse.size()</span>
+<span class="fc bfc" id="L69" title="All 2 branches covered.">        &amp;&amp; interval.overlaps(newsClientResponse.get(currNewsIndex).getPublishedAt())) {</span>
+<span class="fc" id="L70">      overlappingNewsArticles.add(newsClientResponse.get(currNewsIndex));</span>
+<span class="fc" id="L71">      currNewsIndex++;</span>
+    }
+<span class="fc" id="L73">    return overlappingNewsArticles;</span>
+  }
+
+  private List&lt;DateInterval&gt; getIntervals(
+<span class="pc bpc" id="L77" title="2 of 4 branches missed.">      @NonNull final NewsRequest newsRequest, @NonNull final List&lt;NewsArticle&gt; newsClientResponse) {</span>
+<span class="fc" id="L78">    LocalDateTime intervalEndTime = LocalDateTime.now();</span>
+<span class="fc" id="L79">    LocalDateTime intervalStartTime =</span>
+<span class="fc" id="L80">        intervalEndTime.minus(newsRequest.getInterval(), newsRequest.getChronoUnit());</span>
+<span class="fc" id="L81">    LocalDateTime earliestArticlePublishedAt =</span>
+<span class="fc" id="L82">        newsClientResponse.get(newsClientResponse.size() - 1).getPublishedAt();</span>
+
+<span class="fc" id="L84">    List&lt;DateInterval&gt; intervals = new ArrayList&lt;&gt;();</span>
+<span class="fc bfc" id="L85" title="All 2 branches covered.">    while (intervalEndTime.isAfter(earliestArticlePublishedAt)) {</span>
+<span class="fc" id="L86">      intervals.add(</span>
+<span class="fc" id="L87">          DateInterval.builder()</span>
+<span class="fc" id="L88">              .startDate(</span>
+<span class="fc" id="L89">                  LocalDateTime.of(</span>
+<span class="fc" id="L90">                      intervalStartTime.toLocalDate(), intervalStartTime.toLocalTime()))</span>
+<span class="fc" id="L91">              .endDate(</span>
+<span class="fc" id="L92">                  LocalDateTime.of(intervalEndTime.toLocalDate(), intervalEndTime.toLocalTime()))</span>
+<span class="fc" id="L93">              .build());</span>
+<span class="fc" id="L94">      intervalStartTime =</span>
+<span class="fc" id="L95">          intervalStartTime.minus(newsRequest.getInterval(), newsRequest.getChronoUnit());</span>
+<span class="fc" id="L96">      intervalEndTime =</span>
+<span class="fc" id="L97">          intervalEndTime.minus(newsRequest.getInterval(), newsRequest.getChronoUnit());</span>
+    }
+<span class="fc" id="L99">    return intervals;</span>
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.3.201901230119</span></div></body></html>
