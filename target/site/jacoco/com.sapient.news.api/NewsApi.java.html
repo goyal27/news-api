@@ -41,14 +41,20 @@ import static org.springframework.http.HttpStatus.TOO_MANY_REQUESTS;
       @ApiResponse(code = BAD_REQUEST_400, message = &quot;Bad Request&quot;, response = ErrorMessage.class),
       @ApiResponse(
           code = INTERNAL_SERVER_ERROR_500,
-          message = &quot;Internal; Server Error&quot;,
+          message = &quot;Internal Server Error&quot;,
           response = ErrorMessage.class),
       @ApiResponse(
           code = TOO_MANY_REQUESTS_429,
           message = &quot;Too Many Requests&quot;,
-          response = ErrorMessage.class)
+          response = ErrorMessage.class),
+      @ApiResponse(
+          code = UNAUTHORIZED_401,
+          message = &quot;Un-Authorized&quot;,
+          response = ErrorMessage.class),
+      @ApiResponse(code = FORBIDDEN_403, message = &quot;Forbidden&quot;, response = ErrorMessage.class),
+      @ApiResponse(code = NOT_FOUND_404, message = &quot;Not Found&quot;, response = ErrorMessage.class)
     })
-<span class="fc" id="L51">public class NewsApi {</span>
+<span class="fc" id="L57">public class NewsApi {</span>
   @Autowired private NewsService newsService;
 
   @Value(&quot;${news.api.default.interval.unit:Hour}&quot;)
@@ -60,50 +66,50 @@ import static org.springframework.http.HttpStatus.TOO_MANY_REQUESTS;
   @GetMapping(value = &quot;/everything&quot;)
   @RateLimiter(name = &quot;getNewsRateLimit&quot;, fallbackMethod = &quot;getNewsFallBack&quot;)
   public ResponseEntity&lt;NewsResponse&gt; getNews(
-<span class="pc bpc" id="L63" title="1 of 2 branches missed.">      @RequestParam @NonNull String keyword,</span>
+<span class="pc bpc" id="L69" title="1 of 2 branches missed.">      @RequestParam @NonNull String keyword,</span>
       @RequestParam(required = false) Integer interval,
       @RequestParam(required = false) IntervalUnit intervalUnit) {
     NewsRequest newsRequest =
-<span class="fc" id="L67">        NewsRequest.builder()</span>
-<span class="fc bfc" id="L68" title="All 2 branches covered.">            .interval(Objects.isNull(interval) ? defaultInterval : interval)</span>
-<span class="pc bpc" id="L69" title="1 of 2 branches missed.">            .intervalUnit(Objects.isNull(intervalUnit) ? defaultIntervalUnit : intervalUnit)</span>
-<span class="fc" id="L70">            .keyword(keyword)</span>
-<span class="fc" id="L71">            .build();</span>
-<span class="fc" id="L72">    log.info(&quot;New Request {}&quot;, newsRequest);</span>
-<span class="fc" id="L73">    validate(interval, intervalUnit);</span>
-<span class="fc" id="L74">    List&lt;NewsGroup&gt; newsGroups = newsService.getNews(newsRequest);</span>
-<span class="fc" id="L75">    return ResponseEntity.ok().body(NewsResponse.builder().newsGroups(newsGroups).build());</span>
+<span class="fc" id="L73">        NewsRequest.builder()</span>
+<span class="fc bfc" id="L74" title="All 2 branches covered.">            .interval(Objects.isNull(interval) ? defaultInterval : interval)</span>
+<span class="pc bpc" id="L75" title="1 of 2 branches missed.">            .intervalUnit(Objects.isNull(intervalUnit) ? defaultIntervalUnit : intervalUnit)</span>
+<span class="fc" id="L76">            .keyword(keyword)</span>
+<span class="fc" id="L77">            .build();</span>
+<span class="fc" id="L78">    log.info(&quot;New Request {}&quot;, newsRequest);</span>
+<span class="fc" id="L79">    validate(interval, intervalUnit);</span>
+<span class="fc" id="L80">    List&lt;NewsGroup&gt; newsGroups = newsService.getNews(newsRequest);</span>
+<span class="fc" id="L81">    return ResponseEntity.ok().body(NewsResponse.builder().newsGroups(newsGroups).build());</span>
   }
 
   private void validate(Integer interval, IntervalUnit intervalUnit) {
-<span class="pc bpc" id="L79" title="1 of 4 branches missed.">    if (Objects.isNull(interval) &amp;&amp; Objects.isNull(intervalUnit)) return;</span>
-<span class="pc bpc" id="L80" title="2 of 4 branches missed.">    if (Objects.isNull(interval) || Objects.isNull(intervalUnit)) {</span>
-<span class="fc" id="L81">      log.error(&quot;Received Bad Request, Bad interval data&quot;);</span>
-<span class="fc" id="L82">      throw new BadRequestException(ERROR_INVALID_INTERVAL, INVALID_INTERVAL);</span>
+<span class="pc bpc" id="L85" title="1 of 4 branches missed.">    if (Objects.isNull(interval) &amp;&amp; Objects.isNull(intervalUnit)) return;</span>
+<span class="pc bpc" id="L86" title="2 of 4 branches missed.">    if (Objects.isNull(interval) || Objects.isNull(intervalUnit)) {</span>
+<span class="fc" id="L87">      log.error(&quot;Received Bad Request, Bad interval data&quot;);</span>
+<span class="fc" id="L88">      throw new BadRequestException(ERROR_INVALID_INTERVAL, INVALID_INTERVAL);</span>
     }
-<span class="nc" id="L84">  }</span>
+<span class="nc" id="L90">  }</span>
 
   public ResponseEntity&lt;ErrorMessage&gt; getNewsFallBack(
       String keyword,
       Integer interval,
       IntervalUnit intervalUnit,
       io.github.resilience4j.ratelimiter.RequestNotPermitted ex) {
-<span class="nc" id="L91">    log.info(&quot;Rate limit applied no further calls are accepted&quot;);</span>
+<span class="nc" id="L97">    log.info(&quot;Rate limit applied no further calls are accepted&quot;);</span>
 
-<span class="nc" id="L93">    HttpHeaders responseHeaders = new HttpHeaders();</span>
+<span class="nc" id="L99">    HttpHeaders responseHeaders = new HttpHeaders();</span>
 
-<span class="nc" id="L95">    return ResponseEntity.status(HttpStatus.TOO_MANY_REQUESTS)</span>
-<span class="nc" id="L96">        .headers(responseHeaders) // send retry header</span>
-<span class="nc" id="L97">        .body(</span>
-<span class="nc" id="L98">            ErrorMessage.builder()</span>
-<span class="nc" id="L99">                .code(</span>
-<span class="nc" id="L100">                    String.format(</span>
-<span class="nc" id="L101">                        EXCEPTION_ERROR_MESSAGE_FORMAT, TOO_MANY_REQUESTS.value(),</span>
-<span class="nc" id="L102">                        PROJECT_CODE, ERROR_REQUEST_LIMIT_REACHED.getCode()))</span>
-<span class="nc" id="L103">                .timestamp(LocalDateTime.now())</span>
-<span class="nc" id="L104">                .message(&quot;Too many request - No further calls are accepted&quot;)</span>
-<span class="nc" id="L105">                .reference(MDC.get(TRACE_ID_HEADER))</span>
-<span class="nc" id="L106">                .build());</span>
+<span class="nc" id="L101">    return ResponseEntity.status(HttpStatus.TOO_MANY_REQUESTS)</span>
+<span class="nc" id="L102">        .headers(responseHeaders) // send retry header</span>
+<span class="nc" id="L103">        .body(</span>
+<span class="nc" id="L104">            ErrorMessage.builder()</span>
+<span class="nc" id="L105">                .code(</span>
+<span class="nc" id="L106">                    String.format(</span>
+<span class="nc" id="L107">                        EXCEPTION_ERROR_MESSAGE_FORMAT, TOO_MANY_REQUESTS.value(),</span>
+<span class="nc" id="L108">                        PROJECT_CODE, ERROR_REQUEST_LIMIT_REACHED.getCode()))</span>
+<span class="nc" id="L109">                .timestamp(LocalDateTime.now())</span>
+<span class="nc" id="L110">                .message(&quot;Too many request - No further calls are accepted&quot;)</span>
+<span class="nc" id="L111">                .reference(MDC.get(TRACE_ID_HEADER))</span>
+<span class="nc" id="L112">                .build());</span>
   }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.3.201901230119</span></div></body></html>

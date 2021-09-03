@@ -17,7 +17,7 @@ news-api,com.sapient.news.config,RestTemplateConfig,0,13,0,0,0,3,0,3,0,3
 news-api,com.sapient.news.config,SpringFoxSwaggerConfiguration,0,32,0,0,0,11,0,3,0,3
 news-api,com.sapient.news.config,JettyServletWebServerFactoryConfiguration,0,13,0,0,0,3,0,1,0,1
 news-api,com.sapient.news.api,NewsApi,50,73,5,9,15,16,6,6,1,4
-news-api,com.sapient.news.strategy.entities,DateInterval,15,49,6,8,0,6,6,6,0,5
+news-api,com.sapient.news.strategy.entities,DateInterval,15,49,5,9,0,6,5,7,0,5
 news-api,com.sapient.news.strategy.entities,DateInterval.DateIntervalBuilder,27,25,2,2,0,1,3,4,1,4
 news-api,com.sapient.news.exception,ServiceException,8,0,0,0,2,0,1,0,1,0
 news-api,com.sapient.news.exception,RequestLimitReachedException,8,0,0,0,2,0,1,0,1,0

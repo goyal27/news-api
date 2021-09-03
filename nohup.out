@@ -335,3 +335,584 @@ docker: Error response from daemon: driver failed programming external connectiv
 2021-08-31 09:03:21.637 - INFO - 1 --- [SpringContextShutdownHook] - o.e.j.s.h.C.application - Trace-Id:  - Destroying Spring FrameworkServlet 'dispatcherServlet'  
 2021-08-31 09:03:21.640 - INFO - 1 --- [SpringContextShutdownHook] - o.e.j.s.h.ContextHandler - Trace-Id:  - Stopped o.s.b.w.e.j.JettyEmbeddedWebAppContext@7bf3a5d8{application,/,[file:///tmp/jetty-docbase.2454944273440456760.8080/, jar:file:/news-api-1.0.jar!/BOOT-INF/lib/springfox-swagger-ui-2.9.2.jar!/META-INF/resources],UNAVAILABLE}  
 2021-08-31 09:03:21.647 - INFO - 1 --- [SpringContextShutdownHook] - o.s.s.c.ThreadPoolTaskExecutor - Trace-Id:  - Shutting down ExecutorService 'applicationTaskExecutor'  
+docker: Error response from daemon: driver failed programming external connectivity on endpoint sleepy_ishizaka (cc3419513c785a18d586976a7865d586d2462f8724d342191aebccec54f339ae): Bind for 0.0.0.0:8080 failed: port is already allocated.
+docker: Error response from daemon: driver failed programming external connectivity on endpoint relaxed_hypatia (955d1a7c2873d64822494be3ef9c210a22060e8690d1c0cd56843c15fbc5ad2c): Bind for 0.0.0.0:8080 failed: port is already allocated.
+docker: Error response from daemon: driver failed programming external connectivity on endpoint eloquent_almeida (b5257fcb5b96903a601462c52b2e9a511daf9dbba17eb877015745afd3f27bee): Bind for 0.0.0.0:8080 failed: port is already allocated.
+time="2021-09-03T20:30:36+05:30" level=error msg="error waiting for container: context canceled"
+2021-09-03 15:01:25,927 main INFO jar:file:/usr/local/lib/news-api-1.0.jar!/BOOT-INF/classes!/log4j2.xml does not support dynamic reconfiguration
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.2.RELEASE)
+
+2021-09-03 15:01:26.197 - INFO - 1 --- [main] - c.s.n.NewsApplication - Trace-Id:  - Starting NewsApplication v1.0 on 023b67297c3f with PID 1 (/usr/local/lib/news-api-1.0.jar started by root in /)  
+2021-09-03 15:01:26.215 - INFO - 1 --- [main] - c.s.n.NewsApplication - Trace-Id:  - No active profile set, falling back to default profiles: default  
+2021-09-03 15:01:28.153 - INFO - 1 --- [main] - i.g.r.u.RxJava2OnClasspathCondition - Trace-Id:  - RxJava2 related Aspect extensions are not activated, because RxJava2 is not on the classpath.  
+2021-09-03 15:01:28.158 - INFO - 1 --- [main] - i.g.r.u.ReactorOnClasspathCondition - Trace-Id:  - Reactor related Aspect extensions are not activated because Reactor is not on the classpath.  
+2021-09-03 15:01:28.189 - INFO - 1 --- [main] - i.g.r.u.RxJava2OnClasspathCondition - Trace-Id:  - RxJava2 related Aspect extensions are not activated, because RxJava2 is not on the classpath.  
+2021-09-03 15:01:28.193 - INFO - 1 --- [main] - i.g.r.u.ReactorOnClasspathCondition - Trace-Id:  - Reactor related Aspect extensions are not activated because Reactor is not on the classpath.  
+2021-09-03 15:01:28.251 - INFO - 1 --- [main] - i.g.r.u.RxJava2OnClasspathCondition - Trace-Id:  - RxJava2 related Aspect extensions are not activated, because RxJava2 is not on the classpath.  
+2021-09-03 15:01:28.254 - INFO - 1 --- [main] - i.g.r.u.ReactorOnClasspathCondition - Trace-Id:  - Reactor related Aspect extensions are not activated because Reactor is not on the classpath.  
+2021-09-03 15:01:28.285 - INFO - 1 --- [main] - i.g.r.u.RxJava2OnClasspathCondition - Trace-Id:  - RxJava2 related Aspect extensions are not activated, because RxJava2 is not on the classpath.  
+2021-09-03 15:01:28.288 - INFO - 1 --- [main] - i.g.r.u.ReactorOnClasspathCondition - Trace-Id:  - Reactor related Aspect extensions are not activated because Reactor is not on the classpath.  
+2021-09-03 15:01:28.320 - INFO - 1 --- [main] - i.g.r.u.RxJava2OnClasspathCondition - Trace-Id:  - RxJava2 related Aspect extensions are not activated, because RxJava2 is not on the classpath.  
+2021-09-03 15:01:28.323 - INFO - 1 --- [main] - i.g.r.u.ReactorOnClasspathCondition - Trace-Id:  - Reactor related Aspect extensions are not activated because Reactor is not on the classpath.  
+2021-09-03 15:01:28.346 - INFO - 1 --- [main] - i.g.r.u.RxJava2OnClasspathCondition - Trace-Id:  - RxJava2 related Aspect extensions are not activated, because RxJava2 is not on the classpath.  
+2021-09-03 15:01:28.348 - INFO - 1 --- [main] - i.g.r.u.ReactorOnClasspathCondition - Trace-Id:  - Reactor related Aspect extensions are not activated because Reactor is not on the classpath.  
+2021-09-03 15:01:29.370 - INFO - 1 --- [main] - o.e.j.u.log - Trace-Id:  - Logging initialized @6280ms to org.eclipse.jetty.util.log.Slf4jLog  
+2021-09-03 15:01:29.704 - INFO - 1 --- [main] - c.s.n.c.JettyServletWebServerFactoryConfiguration$$EnhancerBySpringCGLIB$$2d2fae64 - Trace-Id:  - Server initialized with port: 8090  
+2021-09-03 15:01:29.717 - INFO - 1 --- [main] - o.e.j.s.Server - Trace-Id:  - jetty-9.4.30.v20200611; built: 2020-06-11T12:34:51.929Z; git: 271836e4c1f4612f12b7bb13ef5a92a927634b0d; jvm 1.8.0_302-b08  
+2021-09-03 15:01:29.749 - INFO - 1 --- [main] - o.e.j.s.h.C.application - Trace-Id:  - Initializing Spring embedded WebApplicationContext  
+2021-09-03 15:01:29.749 - INFO - 1 --- [main] - o.s.b.w.s.c.ServletWebServerApplicationContext - Trace-Id:  - Root WebApplicationContext: initialization completed in 3440 ms  
+2021-09-03 15:01:30.262 - INFO - 1 --- [main] - o.e.j.s.session - Trace-Id:  - DefaultSessionIdManager workerName=node0  
+2021-09-03 15:01:30.263 - INFO - 1 --- [main] - o.e.j.s.session - Trace-Id:  - No SessionScavenger set, using defaults  
+2021-09-03 15:01:30.264 - INFO - 1 --- [main] - o.e.j.s.session - Trace-Id:  - node0 Scavenging every 600000ms  
+2021-09-03 15:01:30.275 - INFO - 1 --- [main] - o.e.j.s.h.ContextHandler - Trace-Id:  - Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@93081b6{application,/,[file:///tmp/jetty-docbase.6330731195728713663.8090/, jar:file:/usr/local/lib/news-api-1.0.jar!/BOOT-INF/lib/springfox-swagger-ui-2.9.2.jar!/META-INF/resources],AVAILABLE}  
+2021-09-03 15:01:30.277 - INFO - 1 --- [main] - o.e.j.s.Server - Trace-Id:  - Started @7188ms  
+2021-09-03 15:01:31.674 - INFO - 1 --- [main] - o.s.b.a.e.w.EndpointLinksResolver - Trace-Id:  - Exposing 2 endpoint(s) beneath base path '/actuator'  
+2021-09-03 15:01:31.859 - INFO - 1 --- [main] - s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Trace-Id:  - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]  
+2021-09-03 15:01:32.081 - INFO - 1 --- [main] - o.s.s.c.ThreadPoolTaskExecutor - Trace-Id:  - Initializing ExecutorService 'applicationTaskExecutor'  
+2021-09-03 15:01:32.589 - INFO - 1 --- [main] - o.e.j.s.h.C.application - Trace-Id:  - Initializing Spring DispatcherServlet 'dispatcherServlet'  
+2021-09-03 15:01:32.589 - INFO - 1 --- [main] - o.s.w.s.DispatcherServlet - Trace-Id:  - Initializing Servlet 'dispatcherServlet'  
+2021-09-03 15:01:32.607 - INFO - 1 --- [main] - o.s.w.s.DispatcherServlet - Trace-Id:  - Completed initialization in 18 ms  
+2021-09-03 15:01:32.658 - INFO - 1 --- [main] - o.e.j.s.AbstractConnector - Trace-Id:  - Started ServerConnector@66982506{HTTP/1.1, (http/1.1)}{0.0.0.0:8090}  
+2021-09-03 15:01:32.661 - INFO - 1 --- [main] - o.s.b.w.e.j.JettyWebServer - Trace-Id:  - Jetty started on port(s) 8090 (http/1.1) with context path ''  
+2021-09-03 15:01:32.662 - INFO - 1 --- [main] - s.d.s.w.p.DocumentationPluginsBootstrapper - Trace-Id:  - Context refreshed  
+2021-09-03 15:01:32.704 - INFO - 1 --- [main] - s.d.s.w.p.DocumentationPluginsBootstrapper - Trace-Id:  - Found 1 custom documentation plugin(s)  
+2021-09-03 15:01:32.782 - INFO - 1 --- [main] - s.d.s.w.s.ApiListingReferenceScanner - Trace-Id:  - Scanning for api listing references  
+2021-09-03 15:01:33.019 - INFO - 1 --- [main] - c.s.n.NewsApplication - Trace-Id:  - Started NewsApplication in 7.619 seconds (JVM running for 9.93)  
+2021-09-03 15:01:50.538 - INFO - 1 --- [qtp225672073-21] - c.s.n.a.NewsApi - Trace-Id: 2f057c1d-a8b5-42f6-9360-5692346e2dd8 - New Request NewsRequest(keyword=apple, intervalUnit=Hour, interval=12)  
+2021-09-03 15:01:51.633 - ERROR - 1 --- [qtp225672073-21] - c.s.n.c.NewsApiClient - Trace-Id: 2f057c1d-a8b5-42f6-9360-5692346e2dd8 - ResourceAccessException exception : {1} org.springframework.web.client.HttpClientErrorException$Unauthorized: 401 Unauthorized: [{"status":"error","code":"apiKeyInvalid","message":"Your API key is invalid or incorrect. Check your key, or go to https://newsapi.org to create a free API key."}]
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:105) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:184) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:125) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:782) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:740) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:674) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.client.RestTemplate.getForObject(RestTemplate.java:315) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at com.sapient.news.client.NewsApiClient.getNews(NewsApiClient.java:42) ~[classes!/:1.0]
+	at com.sapient.news.service.NewsService.getNews(NewsService.java:25) ~[classes!/:1.0]
+	at com.sapient.news.api.NewsApi.getNews(NewsApi.java:80) ~[classes!/:1.0]
+	at com.sapient.news.api.NewsApi$$FastClassBySpringCGLIB$$aa50056f.invoke(<generated>) ~[classes!/:1.0]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at io.github.resilience4j.ratelimiter.RateLimiter.lambda$decorateCheckedSupplier$9076412b$1(RateLimiter.java:218) ~[resilience4j-ratelimiter-1.4.0.jar!/:1.4.0]
+	at io.github.resilience4j.ratelimiter.RateLimiter.executeCheckedSupplier(RateLimiter.java:839) ~[resilience4j-ratelimiter-1.4.0.jar!/:1.4.0]
+	at io.github.resilience4j.ratelimiter.RateLimiter.executeCheckedSupplier(RateLimiter.java:825) ~[resilience4j-ratelimiter-1.4.0.jar!/:1.4.0]
+	at io.github.resilience4j.ratelimiter.configure.RateLimiterAspect.handleJoinPoint(RateLimiterAspect.java:179) ~[resilience4j-spring-1.4.0.jar!/:1.4.0]
+	at io.github.resilience4j.ratelimiter.configure.RateLimiterAspect.proceed(RateLimiterAspect.java:142) ~[resilience4j-spring-1.4.0.jar!/:1.4.0]
+	at io.github.resilience4j.ratelimiter.configure.RateLimiterAspect.lambda$rateLimiterAroundAdvice$749d37c4$1(RateLimiterAspect.java:125) ~[resilience4j-spring-1.4.0.jar!/:1.4.0]
+	at io.github.resilience4j.fallback.DefaultFallbackDecorator.lambda$decorate$52452fd9$1(DefaultFallbackDecorator.java:36) ~[resilience4j-spring-1.4.0.jar!/:1.4.0]
+	at io.github.resilience4j.ratelimiter.configure.RateLimiterAspect.rateLimiterAroundAdvice(RateLimiterAspect.java:125) ~[resilience4j-spring-1.4.0.jar!/:1.4.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_302]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_302]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_302]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_302]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:175) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at com.sapient.news.api.NewsApi$$EnhancerBySpringCGLIB$$27590c9c.getNews(<generated>) ~[classes!/:1.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_302]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_302]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_302]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_302]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878) ~[spring-webmvc-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792) ~[spring-webmvc-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:497) ~[jakarta.servlet-api-4.0.4.jar!/:4.0.4]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:584) ~[jakarta.servlet-api-4.0.4.jar!/:4.0.4]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:763) ~[jetty-servlet-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1631) ~[jetty-servlet-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.websocket.server.WebSocketUpgradeFilter.doFilter(WebSocketUpgradeFilter.java:226) ~[websocket-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1618) ~[jetty-servlet-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.springframework.web.filter.AbstractRequestLoggingFilter.doFilterInternal(AbstractRequestLoggingFilter.java:289) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1618) ~[jetty-servlet-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at com.sapient.news.filter.TraceIdHeaderFilter.doFilter(TraceIdHeaderFilter.java:29) ~[classes!/:1.0]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1618) ~[jetty-servlet-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1618) ~[jetty-servlet-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1618) ~[jetty-servlet-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93) ~[spring-boot-actuator-2.3.2.RELEASE.jar!/:2.3.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1618) ~[jetty-servlet-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1618) ~[jetty-servlet-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:549) ~[jetty-servlet-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602) ~[jetty-security-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1610) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1369) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:489) ~[jetty-servlet-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1580) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1284) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:767) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.Server.handle(Server.java:501) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:556) [jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375) [jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:272) [jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) [jetty-io-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103) [jetty-io-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) [jetty-io-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806) [jetty-util-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938) [jetty-util-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_302]
+ 
+2021-09-03 15:01:51.648 - WARN - 1 --- [qtp225672073-21] - c.s.n.e.ApiExceptionHandler - Trace-Id: 2f057c1d-a8b5-42f6-9360-5692346e2dd8 - Internal Server Error %s com.sapient.news.exception.ServiceException: EC3: Error while fetching news Exception while calling news api for request NewsRequest(keyword=apple, intervalUnit=Hour, interval=12)
+	at com.sapient.news.client.NewsApiClient.wrapRestClientException(NewsApiClient.java:68) ~[classes!/:1.0]
+	at com.sapient.news.client.NewsApiClient.getNews(NewsApiClient.java:61) ~[classes!/:1.0]
+	at com.sapient.news.service.NewsService.getNews(NewsService.java:25) ~[classes!/:1.0]
+	at com.sapient.news.api.NewsApi.getNews(NewsApi.java:80) ~[classes!/:1.0]
+	at com.sapient.news.api.NewsApi$$FastClassBySpringCGLIB$$aa50056f.invoke(<generated>) ~[classes!/:1.0]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at io.github.resilience4j.ratelimiter.RateLimiter.lambda$decorateCheckedSupplier$9076412b$1(RateLimiter.java:218) ~[resilience4j-ratelimiter-1.4.0.jar!/:1.4.0]
+	at io.github.resilience4j.ratelimiter.RateLimiter.executeCheckedSupplier(RateLimiter.java:839) ~[resilience4j-ratelimiter-1.4.0.jar!/:1.4.0]
+	at io.github.resilience4j.ratelimiter.RateLimiter.executeCheckedSupplier(RateLimiter.java:825) ~[resilience4j-ratelimiter-1.4.0.jar!/:1.4.0]
+	at io.github.resilience4j.ratelimiter.configure.RateLimiterAspect.handleJoinPoint(RateLimiterAspect.java:179) ~[resilience4j-spring-1.4.0.jar!/:1.4.0]
+	at io.github.resilience4j.ratelimiter.configure.RateLimiterAspect.proceed(RateLimiterAspect.java:142) ~[resilience4j-spring-1.4.0.jar!/:1.4.0]
+	at io.github.resilience4j.ratelimiter.configure.RateLimiterAspect.lambda$rateLimiterAroundAdvice$749d37c4$1(RateLimiterAspect.java:125) ~[resilience4j-spring-1.4.0.jar!/:1.4.0]
+	at io.github.resilience4j.fallback.DefaultFallbackDecorator.lambda$decorate$52452fd9$1(DefaultFallbackDecorator.java:36) ~[resilience4j-spring-1.4.0.jar!/:1.4.0]
+	at io.github.resilience4j.ratelimiter.configure.RateLimiterAspect.rateLimiterAroundAdvice(RateLimiterAspect.java:125) ~[resilience4j-spring-1.4.0.jar!/:1.4.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_302]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_302]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_302]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_302]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:175) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at com.sapient.news.api.NewsApi$$EnhancerBySpringCGLIB$$27590c9c.getNews(<generated>) ~[classes!/:1.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_302]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_302]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_302]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_302]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878) ~[spring-webmvc-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792) ~[spring-webmvc-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:497) ~[jakarta.servlet-api-4.0.4.jar!/:4.0.4]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:584) ~[jakarta.servlet-api-4.0.4.jar!/:4.0.4]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:763) ~[jetty-servlet-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1631) ~[jetty-servlet-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.websocket.server.WebSocketUpgradeFilter.doFilter(WebSocketUpgradeFilter.java:226) ~[websocket-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1618) ~[jetty-servlet-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.springframework.web.filter.AbstractRequestLoggingFilter.doFilterInternal(AbstractRequestLoggingFilter.java:289) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1618) ~[jetty-servlet-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at com.sapient.news.filter.TraceIdHeaderFilter.doFilter(TraceIdHeaderFilter.java:29) ~[classes!/:1.0]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1618) ~[jetty-servlet-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1618) ~[jetty-servlet-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1618) ~[jetty-servlet-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93) ~[spring-boot-actuator-2.3.2.RELEASE.jar!/:2.3.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1618) ~[jetty-servlet-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1618) ~[jetty-servlet-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:549) ~[jetty-servlet-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602) ~[jetty-security-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1610) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1369) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:489) ~[jetty-servlet-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1580) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1284) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:767) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.Server.handle(Server.java:501) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:556) [jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375) [jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:272) [jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) [jetty-io-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103) [jetty-io-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) [jetty-io-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806) [jetty-util-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938) [jetty-util-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_302]
+ 
+2021-09-03 15:01:51.717 - INFO - 1 --- [qtp225672073-21] - o.e.j.s.RequestLog - Trace-Id: 2f057c1d-a8b5-42f6-9360-5692346e2dd8 - 172.17.0.1 - - [03/Sep/2021:15:01:50 +0000] "GET //v1/news/everything?keyword=apple&interval=12&intervalUnit=Hour HTTP/1.1" 500 272 "-" "PostmanRuntime/7.28.3" 1288  
+docker: Error response from daemon: driver failed programming external connectivity on endpoint nostalgic_torvalds (22dfb3dd79fa93c53f05bb7e542a5110bf62d54171682dd5be577b34dd395c7f): Bind for 0.0.0.0:8090 failed: port is already allocated.
+time="2021-09-03T20:32:50+05:30" level=error msg="error waiting for container: context canceled"
+2021-09-03 15:03:02.681 - INFO - 1 --- [SpringContextShutdownHook] - o.e.j.s.AbstractConnector - Trace-Id:  - Stopped ServerConnector@66982506{HTTP/1.1, (http/1.1)}{0.0.0.0:8090}  
+2021-09-03 15:03:02.682 - INFO - 1 --- [SpringContextShutdownHook] - o.e.j.s.session - Trace-Id:  - node0 Stopped scavenging  
+2021-09-03 15:03:02.685 - INFO - 1 --- [SpringContextShutdownHook] - o.e.j.s.h.C.application - Trace-Id:  - Destroying Spring FrameworkServlet 'dispatcherServlet'  
+2021-09-03 15:03:02.686 - INFO - 1 --- [SpringContextShutdownHook] - o.e.j.s.h.ContextHandler - Trace-Id:  - Stopped o.s.b.w.e.j.JettyEmbeddedWebAppContext@93081b6{application,/,[file:///tmp/jetty-docbase.6330731195728713663.8090/, jar:file:/usr/local/lib/news-api-1.0.jar!/BOOT-INF/lib/springfox-swagger-ui-2.9.2.jar!/META-INF/resources],UNAVAILABLE}  
+2021-09-03 15:03:02.689 - INFO - 1 --- [SpringContextShutdownHook] - o.s.s.c.ThreadPoolTaskExecutor - Trace-Id:  - Shutting down ExecutorService 'applicationTaskExecutor'  
+2021-09-03 15:03:24,334 main INFO jar:file:/usr/local/lib/news-api-1.0.jar!/BOOT-INF/classes!/log4j2.xml does not support dynamic reconfiguration
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.2.RELEASE)
+
+2021-09-03 15:03:24.554 - INFO - 1 --- [main] - c.s.n.NewsApplication - Trace-Id:  - Starting NewsApplication v1.0 on c8bacded07ad with PID 1 (/usr/local/lib/news-api-1.0.jar started by root in /)  
+2021-09-03 15:03:24.567 - INFO - 1 --- [main] - c.s.n.NewsApplication - Trace-Id:  - No active profile set, falling back to default profiles: default  
+2021-09-03 15:03:26.100 - INFO - 1 --- [main] - i.g.r.u.RxJava2OnClasspathCondition - Trace-Id:  - RxJava2 related Aspect extensions are not activated, because RxJava2 is not on the classpath.  
+2021-09-03 15:03:26.103 - INFO - 1 --- [main] - i.g.r.u.ReactorOnClasspathCondition - Trace-Id:  - Reactor related Aspect extensions are not activated because Reactor is not on the classpath.  
+2021-09-03 15:03:26.123 - INFO - 1 --- [main] - i.g.r.u.RxJava2OnClasspathCondition - Trace-Id:  - RxJava2 related Aspect extensions are not activated, because RxJava2 is not on the classpath.  
+2021-09-03 15:03:26.125 - INFO - 1 --- [main] - i.g.r.u.ReactorOnClasspathCondition - Trace-Id:  - Reactor related Aspect extensions are not activated because Reactor is not on the classpath.  
+2021-09-03 15:03:26.159 - INFO - 1 --- [main] - i.g.r.u.RxJava2OnClasspathCondition - Trace-Id:  - RxJava2 related Aspect extensions are not activated, because RxJava2 is not on the classpath.  
+2021-09-03 15:03:26.161 - INFO - 1 --- [main] - i.g.r.u.ReactorOnClasspathCondition - Trace-Id:  - Reactor related Aspect extensions are not activated because Reactor is not on the classpath.  
+2021-09-03 15:03:26.183 - INFO - 1 --- [main] - i.g.r.u.RxJava2OnClasspathCondition - Trace-Id:  - RxJava2 related Aspect extensions are not activated, because RxJava2 is not on the classpath.  
+2021-09-03 15:03:26.185 - INFO - 1 --- [main] - i.g.r.u.ReactorOnClasspathCondition - Trace-Id:  - Reactor related Aspect extensions are not activated because Reactor is not on the classpath.  
+2021-09-03 15:03:26.204 - INFO - 1 --- [main] - i.g.r.u.RxJava2OnClasspathCondition - Trace-Id:  - RxJava2 related Aspect extensions are not activated, because RxJava2 is not on the classpath.  
+2021-09-03 15:03:26.206 - INFO - 1 --- [main] - i.g.r.u.ReactorOnClasspathCondition - Trace-Id:  - Reactor related Aspect extensions are not activated because Reactor is not on the classpath.  
+2021-09-03 15:03:26.226 - INFO - 1 --- [main] - i.g.r.u.RxJava2OnClasspathCondition - Trace-Id:  - RxJava2 related Aspect extensions are not activated, because RxJava2 is not on the classpath.  
+2021-09-03 15:03:26.228 - INFO - 1 --- [main] - i.g.r.u.ReactorOnClasspathCondition - Trace-Id:  - Reactor related Aspect extensions are not activated because Reactor is not on the classpath.  
+2021-09-03 15:03:27.082 - INFO - 1 --- [main] - o.e.j.u.log - Trace-Id:  - Logging initialized @4597ms to org.eclipse.jetty.util.log.Slf4jLog  
+2021-09-03 15:03:27.370 - INFO - 1 --- [main] - c.s.n.c.JettyServletWebServerFactoryConfiguration$$EnhancerBySpringCGLIB$$c655057a - Trace-Id:  - Server initialized with port: 8090  
+2021-09-03 15:03:27.378 - INFO - 1 --- [main] - o.e.j.s.Server - Trace-Id:  - jetty-9.4.30.v20200611; built: 2020-06-11T12:34:51.929Z; git: 271836e4c1f4612f12b7bb13ef5a92a927634b0d; jvm 1.8.0_302-b08  
+2021-09-03 15:03:27.406 - INFO - 1 --- [main] - o.e.j.s.h.C.application - Trace-Id:  - Initializing Spring embedded WebApplicationContext  
+2021-09-03 15:03:27.406 - INFO - 1 --- [main] - o.s.b.w.s.c.ServletWebServerApplicationContext - Trace-Id:  - Root WebApplicationContext: initialization completed in 2763 ms  
+2021-09-03 15:03:27.917 - INFO - 1 --- [main] - o.e.j.s.session - Trace-Id:  - DefaultSessionIdManager workerName=node0  
+2021-09-03 15:03:27.917 - INFO - 1 --- [main] - o.e.j.s.session - Trace-Id:  - No SessionScavenger set, using defaults  
+2021-09-03 15:03:27.919 - INFO - 1 --- [main] - o.e.j.s.session - Trace-Id:  - node0 Scavenging every 600000ms  
+2021-09-03 15:03:27.931 - INFO - 1 --- [main] - o.e.j.s.h.ContextHandler - Trace-Id:  - Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@6f3187b0{application,/,[file:///tmp/jetty-docbase.3318682705667346004.8090/, jar:file:/usr/local/lib/news-api-1.0.jar!/BOOT-INF/lib/springfox-swagger-ui-2.9.2.jar!/META-INF/resources],AVAILABLE}  
+2021-09-03 15:03:27.933 - INFO - 1 --- [main] - o.e.j.s.Server - Trace-Id:  - Started @5449ms  
+2021-09-03 15:03:29.306 - INFO - 1 --- [main] - o.s.b.a.e.w.EndpointLinksResolver - Trace-Id:  - Exposing 2 endpoint(s) beneath base path '/actuator'  
+2021-09-03 15:03:29.491 - INFO - 1 --- [main] - s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Trace-Id:  - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]  
+2021-09-03 15:03:29.715 - INFO - 1 --- [main] - o.s.s.c.ThreadPoolTaskExecutor - Trace-Id:  - Initializing ExecutorService 'applicationTaskExecutor'  
+2021-09-03 15:03:30.224 - INFO - 1 --- [main] - o.e.j.s.h.C.application - Trace-Id:  - Initializing Spring DispatcherServlet 'dispatcherServlet'  
+2021-09-03 15:03:30.224 - INFO - 1 --- [main] - o.s.w.s.DispatcherServlet - Trace-Id:  - Initializing Servlet 'dispatcherServlet'  
+2021-09-03 15:03:30.243 - INFO - 1 --- [main] - o.s.w.s.DispatcherServlet - Trace-Id:  - Completed initialization in 18 ms  
+2021-09-03 15:03:30.283 - INFO - 1 --- [main] - o.e.j.s.AbstractConnector - Trace-Id:  - Started ServerConnector@4007f65e{HTTP/1.1, (http/1.1)}{0.0.0.0:8090}  
+2021-09-03 15:03:30.286 - INFO - 1 --- [main] - o.s.b.w.e.j.JettyWebServer - Trace-Id:  - Jetty started on port(s) 8090 (http/1.1) with context path ''  
+2021-09-03 15:03:30.287 - INFO - 1 --- [main] - s.d.s.w.p.DocumentationPluginsBootstrapper - Trace-Id:  - Context refreshed  
+2021-09-03 15:03:30.331 - INFO - 1 --- [main] - s.d.s.w.p.DocumentationPluginsBootstrapper - Trace-Id:  - Found 1 custom documentation plugin(s)  
+2021-09-03 15:03:30.404 - INFO - 1 --- [main] - s.d.s.w.s.ApiListingReferenceScanner - Trace-Id:  - Scanning for api listing references  
+2021-09-03 15:03:30.635 - INFO - 1 --- [main] - c.s.n.NewsApplication - Trace-Id:  - Started NewsApplication in 6.723 seconds (JVM running for 8.151)  
+2021-09-03 15:03:35.489 - INFO - 1 --- [qtp1208442275-28] - c.s.n.a.NewsApi - Trace-Id: 30b05979-a692-4505-b4f8-c34e785d5a9b - New Request NewsRequest(keyword=apple, intervalUnit=Hour, interval=12)  
+2021-09-03 15:03:36.432 - ERROR - 1 --- [qtp1208442275-28] - c.s.n.c.NewsApiClient - Trace-Id: 30b05979-a692-4505-b4f8-c34e785d5a9b - ResourceAccessException exception : {1} org.springframework.web.client.HttpClientErrorException$Unauthorized: 401 Unauthorized: [{"status":"error","code":"apiKeyInvalid","message":"Your API key is invalid or incorrect. Check your key, or go to https://newsapi.org to create a free API key."}]
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:105) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:184) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:125) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:782) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:740) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:674) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.client.RestTemplate.getForObject(RestTemplate.java:315) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at com.sapient.news.client.NewsApiClient.getNews(NewsApiClient.java:42) ~[classes!/:1.0]
+	at com.sapient.news.service.NewsService.getNews(NewsService.java:25) ~[classes!/:1.0]
+	at com.sapient.news.api.NewsApi.getNews(NewsApi.java:80) ~[classes!/:1.0]
+	at com.sapient.news.api.NewsApi$$FastClassBySpringCGLIB$$aa50056f.invoke(<generated>) ~[classes!/:1.0]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at io.github.resilience4j.ratelimiter.RateLimiter.lambda$decorateCheckedSupplier$9076412b$1(RateLimiter.java:218) ~[resilience4j-ratelimiter-1.4.0.jar!/:1.4.0]
+	at io.github.resilience4j.ratelimiter.RateLimiter.executeCheckedSupplier(RateLimiter.java:839) ~[resilience4j-ratelimiter-1.4.0.jar!/:1.4.0]
+	at io.github.resilience4j.ratelimiter.RateLimiter.executeCheckedSupplier(RateLimiter.java:825) ~[resilience4j-ratelimiter-1.4.0.jar!/:1.4.0]
+	at io.github.resilience4j.ratelimiter.configure.RateLimiterAspect.handleJoinPoint(RateLimiterAspect.java:179) ~[resilience4j-spring-1.4.0.jar!/:1.4.0]
+	at io.github.resilience4j.ratelimiter.configure.RateLimiterAspect.proceed(RateLimiterAspect.java:142) ~[resilience4j-spring-1.4.0.jar!/:1.4.0]
+	at io.github.resilience4j.ratelimiter.configure.RateLimiterAspect.lambda$rateLimiterAroundAdvice$749d37c4$1(RateLimiterAspect.java:125) ~[resilience4j-spring-1.4.0.jar!/:1.4.0]
+	at io.github.resilience4j.fallback.DefaultFallbackDecorator.lambda$decorate$52452fd9$1(DefaultFallbackDecorator.java:36) ~[resilience4j-spring-1.4.0.jar!/:1.4.0]
+	at io.github.resilience4j.ratelimiter.configure.RateLimiterAspect.rateLimiterAroundAdvice(RateLimiterAspect.java:125) ~[resilience4j-spring-1.4.0.jar!/:1.4.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_302]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_302]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_302]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_302]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:175) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at com.sapient.news.api.NewsApi$$EnhancerBySpringCGLIB$$d94fe577.getNews(<generated>) ~[classes!/:1.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_302]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_302]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_302]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_302]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878) ~[spring-webmvc-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792) ~[spring-webmvc-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:497) ~[jakarta.servlet-api-4.0.4.jar!/:4.0.4]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:584) ~[jakarta.servlet-api-4.0.4.jar!/:4.0.4]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:763) ~[jetty-servlet-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1631) ~[jetty-servlet-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.websocket.server.WebSocketUpgradeFilter.doFilter(WebSocketUpgradeFilter.java:226) ~[websocket-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1618) ~[jetty-servlet-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.springframework.web.filter.AbstractRequestLoggingFilter.doFilterInternal(AbstractRequestLoggingFilter.java:289) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1618) ~[jetty-servlet-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at com.sapient.news.filter.TraceIdHeaderFilter.doFilter(TraceIdHeaderFilter.java:29) ~[classes!/:1.0]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1618) ~[jetty-servlet-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1618) ~[jetty-servlet-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1618) ~[jetty-servlet-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93) ~[spring-boot-actuator-2.3.2.RELEASE.jar!/:2.3.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1618) ~[jetty-servlet-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1618) ~[jetty-servlet-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:549) ~[jetty-servlet-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602) ~[jetty-security-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1610) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1369) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:489) ~[jetty-servlet-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1580) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1284) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:767) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.Server.handle(Server.java:501) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:556) [jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375) [jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:272) [jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) [jetty-io-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103) [jetty-io-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) [jetty-io-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806) [jetty-util-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938) [jetty-util-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_302]
+ 
+2021-09-03 15:03:36.448 - WARN - 1 --- [qtp1208442275-28] - c.s.n.e.ApiExceptionHandler - Trace-Id: 30b05979-a692-4505-b4f8-c34e785d5a9b - Internal Server Error %s com.sapient.news.exception.ServiceException: EC3: Error while fetching news Exception while calling news api for request NewsRequest(keyword=apple, intervalUnit=Hour, interval=12)
+	at com.sapient.news.client.NewsApiClient.wrapRestClientException(NewsApiClient.java:68) ~[classes!/:1.0]
+	at com.sapient.news.client.NewsApiClient.getNews(NewsApiClient.java:61) ~[classes!/:1.0]
+	at com.sapient.news.service.NewsService.getNews(NewsService.java:25) ~[classes!/:1.0]
+	at com.sapient.news.api.NewsApi.getNews(NewsApi.java:80) ~[classes!/:1.0]
+	at com.sapient.news.api.NewsApi$$FastClassBySpringCGLIB$$aa50056f.invoke(<generated>) ~[classes!/:1.0]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:771) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at io.github.resilience4j.ratelimiter.RateLimiter.lambda$decorateCheckedSupplier$9076412b$1(RateLimiter.java:218) ~[resilience4j-ratelimiter-1.4.0.jar!/:1.4.0]
+	at io.github.resilience4j.ratelimiter.RateLimiter.executeCheckedSupplier(RateLimiter.java:839) ~[resilience4j-ratelimiter-1.4.0.jar!/:1.4.0]
+	at io.github.resilience4j.ratelimiter.RateLimiter.executeCheckedSupplier(RateLimiter.java:825) ~[resilience4j-ratelimiter-1.4.0.jar!/:1.4.0]
+	at io.github.resilience4j.ratelimiter.configure.RateLimiterAspect.handleJoinPoint(RateLimiterAspect.java:179) ~[resilience4j-spring-1.4.0.jar!/:1.4.0]
+	at io.github.resilience4j.ratelimiter.configure.RateLimiterAspect.proceed(RateLimiterAspect.java:142) ~[resilience4j-spring-1.4.0.jar!/:1.4.0]
+	at io.github.resilience4j.ratelimiter.configure.RateLimiterAspect.lambda$rateLimiterAroundAdvice$749d37c4$1(RateLimiterAspect.java:125) ~[resilience4j-spring-1.4.0.jar!/:1.4.0]
+	at io.github.resilience4j.fallback.DefaultFallbackDecorator.lambda$decorate$52452fd9$1(DefaultFallbackDecorator.java:36) ~[resilience4j-spring-1.4.0.jar!/:1.4.0]
+	at io.github.resilience4j.ratelimiter.configure.RateLimiterAspect.rateLimiterAroundAdvice(RateLimiterAspect.java:125) ~[resilience4j-spring-1.4.0.jar!/:1.4.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_302]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_302]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_302]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_302]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:175) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:749) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:691) ~[spring-aop-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at com.sapient.news.api.NewsApi$$EnhancerBySpringCGLIB$$d94fe577.getNews(<generated>) ~[classes!/:1.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_302]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_302]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_302]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_302]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878) ~[spring-webmvc-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792) ~[spring-webmvc-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:497) ~[jakarta.servlet-api-4.0.4.jar!/:4.0.4]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:584) ~[jakarta.servlet-api-4.0.4.jar!/:4.0.4]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:763) ~[jetty-servlet-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1631) ~[jetty-servlet-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.websocket.server.WebSocketUpgradeFilter.doFilter(WebSocketUpgradeFilter.java:226) ~[websocket-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1618) ~[jetty-servlet-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.springframework.web.filter.AbstractRequestLoggingFilter.doFilterInternal(AbstractRequestLoggingFilter.java:289) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1618) ~[jetty-servlet-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at com.sapient.news.filter.TraceIdHeaderFilter.doFilter(TraceIdHeaderFilter.java:29) ~[classes!/:1.0]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1618) ~[jetty-servlet-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1618) ~[jetty-servlet-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1618) ~[jetty-servlet-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93) ~[spring-boot-actuator-2.3.2.RELEASE.jar!/:2.3.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1618) ~[jetty-servlet-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1618) ~[jetty-servlet-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:549) ~[jetty-servlet-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602) ~[jetty-security-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1610) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1369) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:489) ~[jetty-servlet-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1580) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1284) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:767) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.Server.handle(Server.java:501) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383) ~[jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:556) [jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375) [jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:272) [jetty-server-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) [jetty-io-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103) [jetty-io-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) [jetty-io-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806) [jetty-util-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938) [jetty-util-9.4.30.v20200611.jar!/:9.4.30.v20200611]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_302]
+ 
+2021-09-03 15:03:36.509 - INFO - 1 --- [qtp1208442275-28] - o.e.j.s.RequestLog - Trace-Id: 30b05979-a692-4505-b4f8-c34e785d5a9b - 172.17.0.1 - - [03/Sep/2021:15:03:35 +0000] "GET //v1/news/everything?keyword=apple&interval=12&intervalUnit=Hour HTTP/1.1" 500 272 "-" "PostmanRuntime/7.28.3" 1124  
+2021-09-03 15:04:24.255 - INFO - 1 --- [SpringContextShutdownHook] - o.e.j.s.AbstractConnector - Trace-Id:  - Stopped ServerConnector@4007f65e{HTTP/1.1, (http/1.1)}{0.0.0.0:8090}  
+2021-09-03 15:04:24.255 - INFO - 1 --- [SpringContextShutdownHook] - o.e.j.s.session - Trace-Id:  - node0 Stopped scavenging  
+2021-09-03 15:04:24.259 - INFO - 1 --- [SpringContextShutdownHook] - o.e.j.s.h.C.application - Trace-Id:  - Destroying Spring FrameworkServlet 'dispatcherServlet'  
+2021-09-03 15:04:24.260 - INFO - 1 --- [SpringContextShutdownHook] - o.e.j.s.h.ContextHandler - Trace-Id:  - Stopped o.s.b.w.e.j.JettyEmbeddedWebAppContext@6f3187b0{application,/,[file:///tmp/jetty-docbase.3318682705667346004.8090/, jar:file:/usr/local/lib/news-api-1.0.jar!/BOOT-INF/lib/springfox-swagger-ui-2.9.2.jar!/META-INF/resources],UNAVAILABLE}  
+2021-09-03 15:04:24.264 - INFO - 1 --- [SpringContextShutdownHook] - o.s.s.c.ThreadPoolTaskExecutor - Trace-Id:  - Shutting down ExecutorService 'applicationTaskExecutor'  
+2021-09-03 15:14:38,648 main INFO jar:file:/usr/local/lib/news-api-1.0.jar!/BOOT-INF/classes!/log4j2.xml does not support dynamic reconfiguration
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.2.RELEASE)
+
+2021-09-03 15:14:38.862 - INFO - 1 --- [main] - c.s.n.NewsApplication - Trace-Id:  - Starting NewsApplication v1.0 on 9f1250969b77 with PID 1 (/usr/local/lib/news-api-1.0.jar started by root in /)  
+2021-09-03 15:14:38.875 - INFO - 1 --- [main] - c.s.n.NewsApplication - Trace-Id:  - No active profile set, falling back to default profiles: default  
+2021-09-03 15:14:40.372 - INFO - 1 --- [main] - i.g.r.u.RxJava2OnClasspathCondition - Trace-Id:  - RxJava2 related Aspect extensions are not activated, because RxJava2 is not on the classpath.  
+2021-09-03 15:14:40.376 - INFO - 1 --- [main] - i.g.r.u.ReactorOnClasspathCondition - Trace-Id:  - Reactor related Aspect extensions are not activated because Reactor is not on the classpath.  
+2021-09-03 15:14:40.396 - INFO - 1 --- [main] - i.g.r.u.RxJava2OnClasspathCondition - Trace-Id:  - RxJava2 related Aspect extensions are not activated, because RxJava2 is not on the classpath.  
+2021-09-03 15:14:40.399 - INFO - 1 --- [main] - i.g.r.u.ReactorOnClasspathCondition - Trace-Id:  - Reactor related Aspect extensions are not activated because Reactor is not on the classpath.  
+2021-09-03 15:14:40.436 - INFO - 1 --- [main] - i.g.r.u.RxJava2OnClasspathCondition - Trace-Id:  - RxJava2 related Aspect extensions are not activated, because RxJava2 is not on the classpath.  
+2021-09-03 15:14:40.439 - INFO - 1 --- [main] - i.g.r.u.ReactorOnClasspathCondition - Trace-Id:  - Reactor related Aspect extensions are not activated because Reactor is not on the classpath.  
+2021-09-03 15:14:40.460 - INFO - 1 --- [main] - i.g.r.u.RxJava2OnClasspathCondition - Trace-Id:  - RxJava2 related Aspect extensions are not activated, because RxJava2 is not on the classpath.  
+2021-09-03 15:14:40.462 - INFO - 1 --- [main] - i.g.r.u.ReactorOnClasspathCondition - Trace-Id:  - Reactor related Aspect extensions are not activated because Reactor is not on the classpath.  
+2021-09-03 15:14:40.481 - INFO - 1 --- [main] - i.g.r.u.RxJava2OnClasspathCondition - Trace-Id:  - RxJava2 related Aspect extensions are not activated, because RxJava2 is not on the classpath.  
+2021-09-03 15:14:40.483 - INFO - 1 --- [main] - i.g.r.u.ReactorOnClasspathCondition - Trace-Id:  - Reactor related Aspect extensions are not activated because Reactor is not on the classpath.  
+2021-09-03 15:14:40.500 - INFO - 1 --- [main] - i.g.r.u.RxJava2OnClasspathCondition - Trace-Id:  - RxJava2 related Aspect extensions are not activated, because RxJava2 is not on the classpath.  
+2021-09-03 15:14:40.503 - INFO - 1 --- [main] - i.g.r.u.ReactorOnClasspathCondition - Trace-Id:  - Reactor related Aspect extensions are not activated because Reactor is not on the classpath.  
+2021-09-03 15:14:41.357 - INFO - 1 --- [main] - o.e.j.u.log - Trace-Id:  - Logging initialized @4895ms to org.eclipse.jetty.util.log.Slf4jLog  
+2021-09-03 15:14:41.657 - INFO - 1 --- [main] - c.s.n.c.JettyServletWebServerFactoryConfiguration$$EnhancerBySpringCGLIB$$e70fe11e - Trace-Id:  - Server initialized with port: 8090  
+2021-09-03 15:14:41.666 - INFO - 1 --- [main] - o.e.j.s.Server - Trace-Id:  - jetty-9.4.30.v20200611; built: 2020-06-11T12:34:51.929Z; git: 271836e4c1f4612f12b7bb13ef5a92a927634b0d; jvm 1.8.0_302-b08  
+2021-09-03 15:14:41.696 - INFO - 1 --- [main] - o.e.j.s.h.C.application - Trace-Id:  - Initializing Spring embedded WebApplicationContext  
+2021-09-03 15:14:41.696 - INFO - 1 --- [main] - o.s.b.w.s.c.ServletWebServerApplicationContext - Trace-Id:  - Root WebApplicationContext: initialization completed in 2746 ms  
+2021-09-03 15:14:42.211 - INFO - 1 --- [main] - o.e.j.s.session - Trace-Id:  - DefaultSessionIdManager workerName=node0  
+2021-09-03 15:14:42.211 - INFO - 1 --- [main] - o.e.j.s.session - Trace-Id:  - No SessionScavenger set, using defaults  
+2021-09-03 15:14:42.213 - INFO - 1 --- [main] - o.e.j.s.session - Trace-Id:  - node0 Scavenging every 600000ms  
+2021-09-03 15:14:42.225 - INFO - 1 --- [main] - o.e.j.s.h.ContextHandler - Trace-Id:  - Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@2bec854f{application,/,[file:///tmp/jetty-docbase.2291623916131027675.8090/, jar:file:/usr/local/lib/news-api-1.0.jar!/BOOT-INF/lib/springfox-swagger-ui-2.9.2.jar!/META-INF/resources],AVAILABLE}  
+2021-09-03 15:14:42.228 - INFO - 1 --- [main] - o.e.j.s.Server - Trace-Id:  - Started @5767ms  
+2021-09-03 15:14:43.591 - INFO - 1 --- [main] - o.s.b.a.e.w.EndpointLinksResolver - Trace-Id:  - Exposing 2 endpoint(s) beneath base path '/actuator'  
+2021-09-03 15:14:43.781 - INFO - 1 --- [main] - s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Trace-Id:  - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]  
+2021-09-03 15:14:44.001 - INFO - 1 --- [main] - o.s.s.c.ThreadPoolTaskExecutor - Trace-Id:  - Initializing ExecutorService 'applicationTaskExecutor'  
+2021-09-03 15:14:44.580 - INFO - 1 --- [main] - o.e.j.s.h.C.application - Trace-Id:  - Initializing Spring DispatcherServlet 'dispatcherServlet'  
+2021-09-03 15:14:44.580 - INFO - 1 --- [main] - o.s.w.s.DispatcherServlet - Trace-Id:  - Initializing Servlet 'dispatcherServlet'  
+2021-09-03 15:14:44.598 - INFO - 1 --- [main] - o.s.w.s.DispatcherServlet - Trace-Id:  - Completed initialization in 18 ms  
+2021-09-03 15:14:44.652 - INFO - 1 --- [main] - o.e.j.s.AbstractConnector - Trace-Id:  - Started ServerConnector@71075444{HTTP/1.1, (http/1.1)}{0.0.0.0:8090}  
+2021-09-03 15:14:44.655 - INFO - 1 --- [main] - o.s.b.w.e.j.JettyWebServer - Trace-Id:  - Jetty started on port(s) 8090 (http/1.1) with context path ''  
+2021-09-03 15:14:44.656 - INFO - 1 --- [main] - s.d.s.w.p.DocumentationPluginsBootstrapper - Trace-Id:  - Context refreshed  
+2021-09-03 15:14:44.699 - INFO - 1 --- [main] - s.d.s.w.p.DocumentationPluginsBootstrapper - Trace-Id:  - Found 1 custom documentation plugin(s)  
+2021-09-03 15:14:44.776 - INFO - 1 --- [main] - s.d.s.w.s.ApiListingReferenceScanner - Trace-Id:  - Scanning for api listing references  
+2021-09-03 15:14:45.033 - INFO - 1 --- [main] - c.s.n.NewsApplication - Trace-Id:  - Started NewsApplication in 6.826 seconds (JVM running for 8.573)  
+2021-09-03 15:14:59.549 - INFO - 1 --- [qtp1594138273-28] - c.s.n.a.NewsApi - Trace-Id: bd31ad2f-0b48-410e-a078-f14bf8c5d9d8 - New Request NewsRequest(keyword=apple, intervalUnit=Hour, interval=12)  
+2021-09-03 15:15:02.836 - INFO - 1 --- [qtp1594138273-28] - o.e.j.s.RequestLog - Trace-Id: bd31ad2f-0b48-410e-a078-f14bf8c5d9d8 - 172.17.0.1 - - [03/Sep/2021:15:14:59 +0000] "GET //v1/news/everything?keyword=apple&interval=12&intervalUnit=Hour HTTP/1.1" 200 5635 "-" "PostmanRuntime/7.28.3" 3467  
+2021-09-03 15:15:12.099 - INFO - 1 --- [qtp1594138273-17] - c.s.n.a.NewsApi - Trace-Id: 4836c79d-ec3a-41ad-9317-c54f1d7237a4 - New Request NewsRequest(keyword=apple, intervalUnit=Hour, interval=12)  
+2021-09-03 15:15:14.587 - INFO - 1 --- [qtp1594138273-17] - o.e.j.s.RequestLog - Trace-Id: 4836c79d-ec3a-41ad-9317-c54f1d7237a4 - 172.17.0.1 - - [03/Sep/2021:15:15:12 +0000] "GET //v1/news/everything?keyword=apple&interval=12&intervalUnit=Hour HTTP/1.1" 200 5630 "-" "PostmanRuntime/7.28.3" 2490  
+2021-09-03 15:15:45.236 - INFO - 1 --- [SpringContextShutdownHook] - o.e.j.s.AbstractConnector - Trace-Id:  - Stopped ServerConnector@71075444{HTTP/1.1, (http/1.1)}{0.0.0.0:8090}  
+2021-09-03 15:15:45.236 - INFO - 1 --- [SpringContextShutdownHook] - o.e.j.s.session - Trace-Id:  - node0 Stopped scavenging  
+2021-09-03 15:15:45.240 - INFO - 1 --- [SpringContextShutdownHook] - o.e.j.s.h.C.application - Trace-Id:  - Destroying Spring FrameworkServlet 'dispatcherServlet'  
+2021-09-03 15:15:45.241 - INFO - 1 --- [SpringContextShutdownHook] - o.e.j.s.h.ContextHandler - Trace-Id:  - Stopped o.s.b.w.e.j.JettyEmbeddedWebAppContext@2bec854f{application,/,[file:///tmp/jetty-docbase.2291623916131027675.8090/, jar:file:/usr/local/lib/news-api-1.0.jar!/BOOT-INF/lib/springfox-swagger-ui-2.9.2.jar!/META-INF/resources],UNAVAILABLE}  
+2021-09-03 15:15:45.246 - INFO - 1 --- [SpringContextShutdownHook] - o.s.s.c.ThreadPoolTaskExecutor - Trace-Id:  - Shutting down ExecutorService 'applicationTaskExecutor'  

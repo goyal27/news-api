@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8090
   compression:
     enabled: true
 log:
@@ -48,4 +48,4 @@ news:
   api:
     baseUrl: https://newsapi.org/v2
     everythingApiPath: /everything
-    apiKey:
+    apiKey: bcb3196003024d96bdc95ff94094aa44

@@ -14,7 +14,7 @@ public class DateInterval {
 
 <span class="pc bpc" id="L15" title="1 of 2 branches missed.">  public boolean overlaps(@NonNull LocalDateTime localDateTime) {</span>
 <span class="pc bpc" id="L16" title="1 of 4 branches missed.">    return (startDate.isEqual(localDateTime) || startDate.isBefore(localDateTime))</span>
-<span class="pc bpc" id="L17" title="2 of 4 branches missed.">        &amp;&amp; (endDate.isEqual(localDateTime) || endDate.isAfter(localDateTime));</span>
+<span class="pc bpc" id="L17" title="1 of 4 branches missed.">        &amp;&amp; (endDate.isEqual(localDateTime) || endDate.isAfter(localDateTime));</span>
   }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.3.201901230119</span></div></body></html>

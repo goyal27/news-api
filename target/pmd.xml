@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pmd version="5.3.2" timestamp="2021-08-30T12:08:22.153">
+<pmd version="5.3.2" timestamp="2021-09-03T15:25:54.846">
 <file name="/Users/shubham/IdeaProjects/personal/lld/news-api/src/main/java/com/sapient/news/api/NewsApi.java">
-<violation beginline="1" endline="108" begincolumn="1" endcolumn="2" rule="TooManyStaticImports" ruleset="Import Statements" package="com.sapient.news.api" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/imports.html#TooManyStaticImports" priority="3">
+<violation beginline="1" endline="114" begincolumn="1" endcolumn="2" rule="TooManyStaticImports" ruleset="Import Statements" package="com.sapient.news.api" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/imports.html#TooManyStaticImports" priority="3">
 Too many static imports may lead to messy code
 </violation>
-<violation beginline="95" endline="95" begincolumn="34" endcolumn="61" rule="UnnecessaryFullyQualifiedName" ruleset="Import Statements" package="com.sapient.news.api" class="NewsApi" method="getNewsFallBack" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/imports.html#UnnecessaryFullyQualifiedName" priority="4">
+<violation beginline="101" endline="101" begincolumn="34" endcolumn="61" rule="UnnecessaryFullyQualifiedName" ruleset="Import Statements" package="com.sapient.news.api" class="NewsApi" method="getNewsFallBack" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/imports.html#UnnecessaryFullyQualifiedName" priority="4">
 Unnecessary use of fully qualified name 'HttpStatus.TOO_MANY_REQUESTS' due to existing import 'org.springframework.http.HttpStatus'
 </violation>
 </file>
